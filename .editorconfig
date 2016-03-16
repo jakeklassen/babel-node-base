@@ -1,0 +1,14 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = tab
+indent_size = 2
+
+[.babelrc]
+indent_style = tab
+indent_size = 2
+
+[.eslintrc.js]
+indent_style = tab
+indent_size = 
