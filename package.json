@@ -1,5 +1,5 @@
 {
-  "name": "babel-eslint-base",
+  "name": "babel-node-base",
   "version": "0.1.0",
   "description": "Base project for eslint and babel for modern javascript and node.js",
   "main": "index.js",
