@@ -5,7 +5,7 @@ module.exports = {
   },
   "rules": {
     "no-console": "off",
-    "indent": ["error", "tab" ],
+    "indent": [2, "tab", { "SwitchCase": 1 }],
     "quotes": ["error", "single" ],
     "semi": ["error", "always"]
   },
