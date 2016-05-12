@@ -16,7 +16,7 @@
   "author": "Jake Klassen",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.7.5",
+    "babel-cli": "^6.8.0",
     "babel-eslint": "^6.0.4",
     "babel-preset-es2015-node5": "^1.2.0",
     "babel-preset-stage-2": "^6.5.0",
