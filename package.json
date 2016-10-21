@@ -21,6 +21,6 @@
     "babel-plugin-transform-strict-mode": "^6.11.3",
     "babel-preset-es2015-node6": "^0.3.0",
     "babel-preset-stage-2": "^6.17.0",
-    "eslint": "^3.8.0"
+    "eslint": "^3.8.1"
   }
 }
