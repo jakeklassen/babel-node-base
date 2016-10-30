@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "dev": "node -r babel-register src",
+    "dev": "babel-watch src",
     "start": "node dist"
   },
   "keywords": [
@@ -21,6 +21,8 @@
     "babel-plugin-transform-strict-mode": "^6.11.3",
     "babel-preset-es2015-node6": "^0.3.0",
     "babel-preset-stage-2": "^6.17.0",
+    "babel-watch": "^2.0.3",
     "eslint": "^3.8.1"
-  }
+  },
+  "dependencies": {}
 }
