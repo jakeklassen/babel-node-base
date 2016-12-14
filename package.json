@@ -30,7 +30,10 @@
     "babel-preset-stage-2": "^6.17.0",
     "babel-watch": "^2.0.3",
     "eslint": "^3.8.1",
-    "faucet": "^0.0.1"
+    "faucet": "^0.0.1",
+    "supertest": "^2.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
