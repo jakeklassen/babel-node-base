@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "dev": "babel-watch src",
-    "start": "node dist"
+    "production": "node dist",
+    "start": "babel-watch src"
   },
   "keywords": [
     "base",
