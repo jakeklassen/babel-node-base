@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "dev": "babel-watch src",
-    "start": "node dist",
-    "test": "ava --tap | faucet"
+    "test": "ava --tap | faucet",
+    "production": "node dist",
+    "start": "node -r babel-register src"
   },
   "keywords": [
     "base",
@@ -25,11 +25,13 @@
     "ava": "^0.19.1",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
-    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "babel-preset-env": "^1.5.2",
     "babel-preset-es2015-node6": "^0.4.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-watch": "^2.0.6",
     "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
     "faucet": "^0.0.1",
     "supertest": "^3.0.0"
   },
