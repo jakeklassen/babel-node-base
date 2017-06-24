@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel src --out-dir dist",
     "production": "node dist",
-    "start": "node -r babel-register src"
+    "start": "node -r babel-register src",
+    "start:watch": "nodemon -r babel-register src"
   },
   "keywords": [
     "base",
@@ -23,7 +24,8 @@
     "babel-preset-stage-2": "^6.24.1",
     "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.6.0"
+    "eslint-plugin-import": "^2.6.0",
+    "nodemon": "^1.11.0"
   },
   "dependencies": {}
 }
