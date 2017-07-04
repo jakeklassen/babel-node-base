@@ -20,7 +20,7 @@
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-plugin-transform-strict-mode": "^6.24.1",
-    "babel-preset-env": "^1.5.2",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-stage-2": "^6.24.1",
     "eslint": "^4.1.1",
     "eslint-config-airbnb-base": "^11.2.0",
