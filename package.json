@@ -5,36 +5,34 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "test": "ava --tap | faucet",
+    "eslint:fix": "eslint -c .eslintrc.json --fix src",
+    "eslint:check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "production": "node dist",
     "start": "node -r babel-register src",
-    "start:watch": "nodemon -r babel-register src"
+    "start:watch": "nodemon -r babel-register src",
+    "test": "ava --tap | faucet"
   },
-  "keywords": [
-    "base",
-    "javascript",
-    "node.js"
-  ],
+  "keywords": ["base", "javascript", "node.js"],
   "author": "Jake Klassen",
   "license": "MIT",
   "ava": {
-    "require": [
-      "babel-register"
-    ]
+    "require": ["babel-register"]
   },
   "devDependencies": {
-    "ava": "^0.20.0",
+    "ava": "^0.21.0",
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
-    "babel-preset-env": "^1.5.2",
-    "babel-preset-es2015-node6": "^0.4.0",
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
     "babel-preset-stage-2": "^6.24.1",
-    "babel-watch": "^2.0.6",
-    "eslint": "^4.1.1",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.6.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-prettier": "^2.1.2",
     "faucet": "^0.0.1",
     "nodemon": "^1.11.0",
+    "prettier": "^1.5.3",
     "supertest": "^3.0.0"
   },
   "dependencies": {
