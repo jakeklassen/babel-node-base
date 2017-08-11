@@ -40,7 +40,12 @@ jspm_packages
 .node_repl_history
 
 ### VisualStudioCode ###
-.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
 
 ### Vagrant ###
 .vagrant/
