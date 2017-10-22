@@ -12,11 +12,17 @@
     "start:watch": "nodemon -r babel-register src",
     "test": "ava --tap | faucet"
   },
-  "keywords": ["base", "javascript", "node.js"],
+  "keywords": [
+    "base",
+    "javascript",
+    "node.js"
+  ],
   "author": "Jake Klassen",
   "license": "MIT",
   "ava": {
-    "require": ["babel-register"]
+    "require": [
+      "babel-register"
+    ]
   },
   "devDependencies": {
     "ava": "^0.21.0",
