@@ -1,5 +1,5 @@
 {
-  "plugins": ["transform-strict-mode"],
+  "plugins": ["transform-strict-mode", "transform-object-rest-spread"],
   "presets": [
     [
       "env",
@@ -8,7 +8,6 @@
           "node": "current"
         }
       }
-    ],
-    "stage-2"
+    ]
   ]
 }
