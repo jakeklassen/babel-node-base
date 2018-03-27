@@ -1,27 +1,27 @@
 {
   "name": "babel-node-base",
   "version": "0.1.0",
-  "description": "Base project for eslint and babel for modern javascript and node.js",
+  "description":
+    "Base project for eslint and babel for modern javascript and node.js",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
     "eslint:fix": "eslint -c .eslintrc.json --fix src",
-    "eslint:check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
+    "eslint:check":
+      "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "production": "node dist",
-    "start": "node -r babel-register src",
-    "start:watch": "nodemon -r babel-register src"
+    "start": "babel-node src",
+    "watch": "nodemon --exec yarn start"
   },
-  "keywords": [
-    "base",
-    "javascript",
-    "node.js"
-  ],
+  "keywords": ["base", "javascript", "node.js"],
   "author": "Jake Klassen",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-preset-env": "^1.6.0",
+    "@babel/cli": "^7.0.0-beta.42",
+    "@babel/core": "^7.0.0-beta.42",
+    "@babel/node": "^7.0.0-beta.42",
+    "@babel/preset-env": "^7.0.0-beta.42",
+    "babel-eslint": "^8.2.2",
     "eslint": "^4.6.1",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-config-prettier": "^2.4.0",
