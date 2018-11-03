@@ -1,0 +1,41 @@
+version: "2.4"
+
+services:
+  staging-deps:
+    image: sample-app
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - MONGO_URL=mongodb://mongo:27017/sample_app
+    networks:
+      - default
+    depends_on:
+      - mongo
+
+  mongo:
+    image: "mongo:3.6.3"
+    ports:
+      - 27017:27017
+    networks:
+      - default
+
+  staging:
+    image: "mhart/alpine-node:10.13.0"
+    volumes:
+      - .:/home/node/app
+    working_dir: /home/node/app
+    networks:
+      - default
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/sample_app
+    command: yarn test:staging
+
+  clean:
+    extends:
+      service: staging
+    command: rm -rf node_modules
+
+  install:
+    extends:
+      service: staging
+    command: yarn

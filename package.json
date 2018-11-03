@@ -9,7 +9,8 @@
     "eslint:check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "production": "node dist",
     "start": "babel-node src",
-    "watch": "nodemon --exec yarn start"
+    "watch": "nodemon --exec yarn start",
+    "test:staging": "jest"
   },
   "keywords": [
     "base",
@@ -19,18 +20,27 @@
   "author": "Jake Klassen",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.55",
-    "@babel/core": "^7.0.0-beta.55",
-    "@babel/node": "^7.0.0-beta.55",
-    "@babel/preset-env": "^7.0.0-beta.55",
-    "babel-eslint": "^8.2.6",
-    "eslint": "^5.2.0",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-config-prettier": "^2.4.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "nodemon": "^1.18.3",
-    "prettier": "^1.14.0"
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.5",
+    "prettier": "^1.14.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "chance": "^1.0.16",
+    "express": "^4.16.4",
+    "helmet": "^3.14.0",
+    "mongoose": "^5.3.9",
+    "pino": "^5.8.0"
+  }
 }

@@ -1,0 +1,21 @@
+version: "3.4"
+
+services:
+  server:
+    build:
+      context: .
+    command: yarn start
+    volumes:
+      - .:/home/node/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    # Overwrite any env var defined in .env file (if required)
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/sample_app
+
+  mongo:
+    image: "mongo:3.6.3"
+    ports:
+      - "27017:27017"
