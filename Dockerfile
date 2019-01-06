@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:10.13.0 AS build
+FROM mhart/alpine-node:10.15.0 AS build
 
 RUN apk add --update --no-cache \
   python \
@@ -18,7 +18,7 @@ RUN yarn build
 RUN yarn --production
 
 # Continue from build stage
-FROM mhart/alpine-node:10.13.0
+FROM mhart/alpine-node:10.15.0
 
 ENV PORT=3000
 EXPOSE $PORT

@@ -20,7 +20,7 @@ services:
       - default
 
   staging:
-    image: "mhart/alpine-node:10.13.0"
+    image: "mhart/alpine-node:10.15.0"
     volumes:
       - .:/home/node/app
     working_dir: /home/node/app

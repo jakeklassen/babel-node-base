@@ -20,4 +20,3 @@ staging:
 
 staging-down:
 	docker-compose -f docker-compose.staging.yml down
-	
