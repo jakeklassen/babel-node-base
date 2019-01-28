@@ -6,7 +6,7 @@ services:
       context: .
     command: yarn start
     volumes:
-      - .:/home/node/app
+      - .:/app
     ports:
       - "3000:3000"
     depends_on:
