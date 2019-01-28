@@ -8,21 +8,21 @@ metadata:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: oneup
+  name: app
   namespace: tilt-integration
   labels:
-    app: oneup
+    app: app
 spec:
   selector:
     matchLabels:
-      app: oneup
+      app: app
   template:
     metadata:
       labels:
-        app: oneup
+        app: app
     spec:
       containers:
-        - name: oneup
+        - name: app
           image: babel-node-base
           command: ["yarn", "production"]
           ports:
