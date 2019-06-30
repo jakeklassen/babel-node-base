@@ -2,9 +2,10 @@
   "plugins": [],
   "presets": [
     [
-      "env",
+      "@babel/preset-env",
       {
         "targets": {
+          "esmodules": true,
           "node": "current"
         }
       }

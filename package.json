@@ -8,8 +8,8 @@
     "eslint:fix": "eslint -c .eslintrc.json --fix src",
     "eslint:check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "production": "node dist",
-    "start": "node -r babel-register src",
-    "start:watch": "nodemon -r babel-register src"
+    "start": "node -r @babel/register src",
+    "start:watch": "nodemon -r @babel/register src"
   },
   "keywords": [
     "base",
@@ -19,12 +19,14 @@
   "author": "Jake Klassen",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
     "babel-eslint": "^10.0.1",
-    "babel-preset-env": "^1.6.0",
-    "eslint": "^5.12.0",
+    "eslint": "^6.0.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-prettier": "^3.0.1",
     "nodemon": "^1.18.9",
